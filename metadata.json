@@ -1,0 +1,7 @@
+{
+  "name": "LivreStore Imperatriz",
+  "description": "O marketplace líder em Imperatriz, Maranhão. Compre e venda produtos localmente com a melhor experiência e tecnologia AI.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}
