@@ -3,16 +3,28 @@
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="theme-color" content="#FF6600">
+  <meta name="description" content="LivreStore Imperatriz - O marketplace líder da região. Compre e venda produtos locais com facilidade.">
+  
+  <!-- Open Graph / Social Media -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="LivreStore | O seu marketplace favorito em Imperatriz">
+  <meta property="og:description" content="Compre e venda em Imperatriz e região com frete grátis e retirada rápida.">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&q=80&w=600">
+
   <title>LivreStore | O seu marketplace favorito</title>
+  
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
   <style>
     body {
       font-family: 'Inter', sans-serif;
       background-color: #ebebeb;
+      -webkit-tap-highlight-color: transparent;
     }
     .mercado-shadow {
       box-shadow: 0 1px 2px 0 rgba(0,0,0,.1);
@@ -20,18 +32,27 @@
     .mercado-shadow-hover:hover {
       box-shadow: 0 7px 16px 0 rgba(0,0,0,.11);
     }
+    /* Esconder scrollbar mantendo funcionalidade */
+    .no-scrollbar::-webkit-scrollbar {
+      display: none;
+    }
+    .no-scrollbar {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
   </style>
-<script type="importmap">
-{
-  "imports": {
-    "@google/genai": "https://esm.sh/@google/genai@^1.35.0",
-    "react/": "https://esm.sh/react@^19.2.3/",
-    "react": "https://esm.sh/react@^19.2.3",
-    "lucide-react": "https://esm.sh/lucide-react@^0.562.0",
-    "react-dom/": "https://esm.sh/react-dom@^19.2.3/"
+  
+  <script type="importmap">
+  {
+    "imports": {
+      "@google/genai": "https://esm.sh/@google/genai@^1.35.0",
+      "react/": "https://esm.sh/react@^19.2.3/",
+      "react": "https://esm.sh/react@^19.2.3",
+      "lucide-react": "https://esm.sh/lucide-react@^0.562.0",
+      "react-dom/": "https://esm.sh/react-dom@^19.2.3/"
+    }
   }
-}
-</script>
+  </script>
 </head>
 <body>
   <div id="root"></div>
